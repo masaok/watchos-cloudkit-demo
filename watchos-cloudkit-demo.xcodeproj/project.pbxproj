@@ -15,6 +15,8 @@
 		CF40319B2AB2E43F001B8346 /* watchos_cloudkit_demo_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40319A2AB2E43F001B8346 /* watchos_cloudkit_demo_Watch_AppTests.swift */; };
 		CF4031A52AB2E43F001B8346 /* watchos_cloudkit_demo_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4031A42AB2E43F001B8346 /* watchos_cloudkit_demo_Watch_AppUITests.swift */; };
 		CF4031A72AB2E43F001B8346 /* watchos_cloudkit_demo_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4031A62AB2E43F001B8346 /* watchos_cloudkit_demo_Watch_AppUITestsLaunchTests.swift */; };
+		CF4031B92AB2E87E001B8346 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4031B82AB2E87E001B8346 /* Item.swift */; };
+		CF4031BB2AB2E896001B8346 /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4031BA2AB2E896001B8346 /* CloudKitHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,9 @@
 		CF4031A02AB2E43F001B8346 /* watchos-cloudkit-demo Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watchos-cloudkit-demo Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4031A42AB2E43F001B8346 /* watchos_cloudkit_demo_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchos_cloudkit_demo_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		CF4031A62AB2E43F001B8346 /* watchos_cloudkit_demo_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchos_cloudkit_demo_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF4031B72AB2E506001B8346 /* watchos-cloudkit-demo Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watchos-cloudkit-demo Watch App.entitlements"; sourceTree = "<group>"; };
+		CF4031B82AB2E87E001B8346 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CF4031BA2AB2E896001B8346 /* CloudKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +123,11 @@
 		CF4031882AB2E43D001B8346 /* watchos-cloudkit-demo Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				CF4031B72AB2E506001B8346 /* watchos-cloudkit-demo Watch App.entitlements */,
 				CF4031892AB2E43D001B8346 /* watchos_cloudkit_demoApp.swift */,
 				CF40318B2AB2E43D001B8346 /* ContentView.swift */,
+				CF4031BA2AB2E896001B8346 /* CloudKitHelper.swift */,
+				CF4031B82AB2E87E001B8346 /* Item.swift */,
 				CF40318D2AB2E43F001B8346 /* Assets.xcassets */,
 				CF40318F2AB2E43F001B8346 /* Preview Content */,
 			);
@@ -310,6 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF40318C2AB2E43D001B8346 /* ContentView.swift in Sources */,
+				CF4031B92AB2E87E001B8346 /* Item.swift in Sources */,
+				CF4031BB2AB2E896001B8346 /* CloudKitHelper.swift in Sources */,
 				CF40318A2AB2E43D001B8346 /* watchos_cloudkit_demoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "watchos-cloudkit-demo Watch App/watchos-cloudkit-demo Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"watchos-cloudkit-demo Watch App/Preview Content\"";
@@ -496,6 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "watchos-cloudkit-demo Watch App/watchos-cloudkit-demo Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"watchos-cloudkit-demo Watch App/Preview Content\"";

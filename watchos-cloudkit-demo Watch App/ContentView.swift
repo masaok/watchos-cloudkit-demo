@@ -2,20 +2,25 @@
 //  ContentView.swift
 //  watchos-cloudkit-demo Watch App
 //
-//  Created by keckadmin on 9/13/23.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var items: [Item] = []
+    let cloudKitHelper = CloudKitHelper()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List(items, id: \.id) { item in
+            Text(item.name)
         }
-        .padding()
+        .onAppear(perform: loadData)
+    }
+    
+    func loadData() {
+        cloudKitHelper.fetchItems { fetchedItems in
+            items = fetchedItems
+        }
     }
 }
 
